@@ -36,6 +36,8 @@ public class Test1 {
 
         String password = faker.internet().password(8, 10, true, true, true );
 
+        String email = faker.internet().emailAddress();  // TODO: for Test2 comment it
+
         regPage.inputEmail.sendKeys(email);
         regPage.inputConfirmEmail.sendKeys(email);
 
